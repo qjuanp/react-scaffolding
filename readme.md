@@ -18,6 +18,26 @@ Babel is the one in charge of transform the code
 - `@babel/preset-react`
     Allow us to transpile JSX into more traditional javascript
 
+### Webpack
+
+- `webpack`
+    Module bundler
+
+- `webpack-cli`
+    Tool to interact with webpack from the cli
+
+- `webpack-dev-server`
+    Creates a development server to expose our app locally
+
+- `style-loader`
+    Webpack loader for styles, it is in charge of load correctly styles into html from an import in .js/.jsx files
+
+- `css-loader`
+    Webpack loader for css, it can be used to define rules to transform css rules
+
+- `babel-loader`
+    Webpack loader for babel, it's the way Weback can transpile .js/.jsx with babel
+
 # Steps
 1. Create application folders
     - `public`
@@ -28,3 +48,5 @@ Babel is the one in charge of transform the code
 5. Install babel
     > `npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react`
 6. Configure babel
+7. install Webpack
+    > `npm install --save-dev webpack webpack-cli webpack-dev-server style-loader css-loader babel-loader`
