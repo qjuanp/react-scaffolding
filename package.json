@@ -1,0 +1,17 @@
+{
+  "name": "reactjs-scaffolding",
+  "version": "1.0.0",
+  "description": "1. Create application folders     - `public`     - `src` 2. Crete `index.hmtl` entry point of the reactjs application 3. Initialize npm 4. Added initial rulos to .gitignore 5. Install babel     > `npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3"
+  }
+}
