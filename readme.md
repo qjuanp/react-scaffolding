@@ -60,3 +60,11 @@ Babel is the one in charge of transform the code
     > `npm install --save-dev webpack webpack-cli webpack-dev-server style-loader css-loader babel-loader`
 8. Install Reactjs
     > `npm install react react-dom`
+
+
+# Next Steps
+
+- [ ] Hot Realod for CSS Only
+- [ ] Sass loader
+- [ ] production bundle
+- [ ] optimizations over production bundle
