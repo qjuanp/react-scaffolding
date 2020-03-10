@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
     // Where application starts & where to start building the app
-    entry: './src/index.js', 
+    entry: path.resolve(__dirname, 'src', 'index.js'),
 
     // Mode, this is specified to avoid set the parameter when server runs
     mode: 'development',
@@ -16,7 +16,9 @@ module.exports = {
                 test: /\.(js|jsx)$/, // .js or .jsx files
                 exclude: /(node_modules|bower_components)/,
                 loader: 'babel-loader',
-                options: { presets: ['@babel/env'] }
+                options: {
+                    presets: ["@babel/preset-env", "@babel/preset-react"],
+                }
             },
             {
                 // processing CSS. Since we’re not pre-or-post-processing our CSS, we just need to make sure to add style-loader and css-loader to the use property
@@ -47,9 +49,8 @@ module.exports = {
         port: 3000,
         // This publicPath tells the server where our bundled code actually is
         publicPath: 'http://localhost:3000/dist/',
-        hotOnly: true
-    },
 
-    // Avoid realoding browser when source code change
-    plugins: [new webpack.HotModuleReplacementPlugin()]
+        // Enably Hot Reaload
+        hot: true
+    }
 };

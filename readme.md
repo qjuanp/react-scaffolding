@@ -38,6 +38,14 @@ Babel is the one in charge of transform the code
 - `babel-loader`
     Webpack loader for babel, it's the way Weback can transpile .js/.jsx with babel
 
+### Reacjs
+
+- `react`
+    Base React library
+
+- `react-dom`
+    Implementation that brings react into webbrowser app with all required interaction with the browser DOM
+
 # Steps
 1. Create application folders
     - `public`
@@ -48,5 +56,7 @@ Babel is the one in charge of transform the code
 5. Install babel
     > `npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react`
 6. Configure babel
-7. install Webpack
+7. Install Webpack
     > `npm install --save-dev webpack webpack-cli webpack-dev-server style-loader css-loader babel-loader`
+8. Install Reactjs
+    > `npm install react react-dom`
