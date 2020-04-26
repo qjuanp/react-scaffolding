@@ -68,3 +68,7 @@ Babel is the one in charge of transform the code
 - [ ] Sass loader
 - [ ] production bundle
 - [ ] optimizations over production bundle
+- [ ] Linters
+- [ ] ES2020
+- [ ] git hooks to validate
+- [ ] Unit testing
