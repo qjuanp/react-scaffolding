@@ -24,13 +24,17 @@ module.exports = {
                 // processing CSS. Since we’re not pre-or-post-processing our CSS, we just need to make sure to add style-loader and css-loader to the use property
                 test: /\.css$/, // .css files
                 use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.scss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
             }
         ]
     },
 
     // The resolve property allows us to specify which extensions Webpack will resolve — this allows us to import modules without needing to add their extensions
     resolve: {
-        extensions: ['*', '.js', '.jsx']
+        extensions: ['*', '.js', '.jsx', '.scss']
     },
 
     // where to put our bundled code

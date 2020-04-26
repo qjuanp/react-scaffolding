@@ -46,6 +46,21 @@ Babel is the one in charge of transform the code
 - `react-dom`
     Implementation that brings react into webbrowser app with all required interaction with the browser DOM
 
+### SASS
+
+> Descriptions taken from [here][2] 
+
+- `node-sass`
+    Provides binding for Node.js to LibSass, a Sass compiler.
+
+- `sass-loader`
+    Is a loader for Webpack for compiling SCSS/Sass files.
+
+- `mini-css-extract-plugin`
+    Extracts our CSS out of the JavaScript bundle into a separate file, essential for production builds.
+
+
+
 # Steps
 1. Create application folders
     - `public`
@@ -60,15 +75,26 @@ Babel is the one in charge of transform the code
     > `npm install --save-dev webpack webpack-cli webpack-dev-server style-loader css-loader babel-loader`
 8. Install Reactjs
     > `npm install react react-dom`
+9. Install Sass and Sass loader
+    > `npm install --save-dev node-sass sass-loader`
 
 
 # Next Steps
 
+- [x] Sass loader
 - [ ] Hot Realod for CSS Only
-- [ ] Sass loader
 - [ ] production bundle
 - [ ] optimizations over production bundle
 - [ ] Linters
 - [ ] ES2020
 - [ ] git hooks to validate
 - [ ] Unit testing
+
+# References
+
+1. Reviewing
+2. [Roll your own tiny React environment using Webpack, Babel, and Sass][2]
+
+
+[1]: unlocated
+[2]: https://www.codementor.io/@valentinrad/roll-your-own-tiny-react-environment-using-webpack-babel-and-sass-ei70wyhjl "Roll your own tiny React environment using Webpack, Babel, and Sass"
